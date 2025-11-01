@@ -92,7 +92,7 @@ private:
         }
 
         if (balance < -1 && key < node->right->key) {
-            node->right = leftRotation(node->right);
+            node->right = rightRotation(node->right);
             return leftRotation(node);
         }
 
